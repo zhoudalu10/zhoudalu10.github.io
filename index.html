@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="assets/css/typo.css">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/index.css">
+    <script src="./assets/js/html2canvas.min.js"></script>
+    <script src="./assets/js/index.js"></script>
     <script>
         function loading() {
             document.getElementsByClassName('avatar')[0].style.display = 'block';
@@ -429,9 +431,27 @@
 <footer class="footer">
     <p>© 2020 Zhou.Dalu .简历最后更新时间为
         <time>2020年12月15日</time>
-        .
+        . <a href="javascript:saveCanvas();">下载简历</a>
     </p>
 </footer>
+<script>
+    function saveCanvas() {
+        new html2canvas(document.body, {
+            backgroundColor: "transparent",  //png图片透明
+            allowTaint: true, //  显示图片
+            useCORS: true  //允许跨域
+        }).then(canvas => {
+            // canvas为转换后的Canvas对象
+            let oImg = new Image();
+            oImg.src = canvas.toDataURL();  // 导出图片
+            var alink = document.createElement("a");
+            alink.setAttribute("download", "下载.png");
+            oImg.setAttribute('crossOrigin', 'anonymous');
+            alink.href = oImg.src;
+            alink.click();
+        });
+    }
+</script>
 
 <!-- 侧栏 -->
 <!--<aside>-->
@@ -445,7 +465,6 @@
 <!--    </ul>-->
 <!--</aside>-->
 
-<script src="./assets/js/index.js"></script>
 </body>
 
 </html>
