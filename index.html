@@ -437,13 +437,12 @@
 <script>
     function saveCanvas() {
         new html2canvas(document.body, {
-            backgroundColor: "transparent",  //png图片透明
-            allowTaint: true, //  显示图片
-            useCORS: true  //允许跨域
+            backgroundColor: "transparent",
+            allowTaint: true,
+            useCORS: true
         }).then(canvas => {
-            // canvas为转换后的Canvas对象
             let oImg = new Image();
-            oImg.src = canvas.toDataURL();  // 导出图片
+            oImg.src = canvas.toDataURL();
             var alink = document.createElement("a");
             alink.setAttribute("download", "下载.png");
             oImg.setAttribute('crossOrigin', 'anonymous');
