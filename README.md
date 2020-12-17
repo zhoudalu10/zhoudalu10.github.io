@@ -6,37 +6,57 @@
 
 性别：男
 
-出生年月：1997-10
+出生年月：1997.10
+
+电话：17314970939
+
+邮箱：zhoudalu-5@163.com
 
 
-### Markdown
+### 求职意向
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+岗位：JAVA软件开发
+
+### 教育背景
+
+学校名称：南京信息工程大学滨江学院
+
+就读时间：2016.09-2020.06
+
+所学专业：信息工程
+
+学历学位：工科学士
+
+英语水平：四级
+
+### 技术技能
+
+熟练掌握JAVA开发技能，有良好的编程习惯，具备良好的面向对象编程思想。
+
+熟悉常用的JAVA API，包括多线程、I/O、 Socket、JDBC、XML、JAVA反射等。
+
+熟悉Oracle、MySQL、Redis等数据库操作。
+
+熟悉SpringCloud、SpringBoot、Spring、SpringMVC、Shiro、Quartz、MyBatis、MyBatis Plus等常用后端开发框架，具有一定的项目开发经验。
+
+熟悉BootStrap、Layui、ApexCharts.JS、ECharts、Fish等常用前端开发框架。
+
+熟练使用Svn、Git等代码版本控制系统。
+
+了解 Linux 操作系统相关指令，具备树莓派开发相关经验。
 
 ```markdown
-Syntax highlighted code block
+@EnableAsync
+@SpringBootApplication
+@EnableTransactionManagement
+@MapperScan("me.yexin.ntms.*.mapper")
+public class NtmsApplication {
 
-# Header 1
-## Header 2
-### Header 3
+    public static void main(String[] args) {
+        new SpringApplicationBuilder(NtmsApplication.class).run(args);
+    }
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+}
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/zhoudalu10/zhoudalu10.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+For more details see [New teaching management system](https://ntms.yexin.me/).
