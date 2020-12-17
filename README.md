@@ -51,12 +51,10 @@
 @EnableTransactionManagement
 @MapperScan("me.yexin.ntms.*.mapper")
 public class NtmsApplication {
-
     public static void main(String[] args) {
         new SpringApplicationBuilder(NtmsApplication.class).run(args);
     }
-
 }
 ```
 
-For more details see [New teaching management system](https://ntms.yexin.me/).
+For more details see [New teaching management system](http://120.26.242.112/).
