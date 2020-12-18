@@ -93,11 +93,11 @@ body {
         border-radius: 50%; }
   .container .side .info-unit ul li label {
     display: inline-block;
-    width: 35%; }
+    width: 25%; }
   .container .side .info-unit ul li span {
     display: inline-block;
     vertical-align: top;
-    width: 60%; }
+    width: 70%; }
 .container .main {
   position: relative;
   margin-left: 22rem;
